@@ -17,7 +17,8 @@
   </head>
   <body>
     <header class="header">
-      <nav>
+      <div class="container">
+      <nav class="navigation">
         <a href="./index.html" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
 
         <ul class="site-nav list">
@@ -26,24 +27,26 @@
           <li><a href="" class="link">Контакты</a></li>
         </ul>
       </nav>
-
+      
       <ul class="contacts list">
         <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
+      </div>
     </header>
 
     <main>
       <section>
-      <h1>Примеры работ</h1>
-      <ul>
+        <div class="container">
+      <h1 class="visually-hidden">Примеры работ</h1>
+      <ul class="filter-buttons">
         <li class="list"><button class="filter">Все</button></li>
         <li class="list"><button class="filter">Веб-сайты</button></li>
         <li class="list"><button class="filter">Приложения</button></li>
         <li class="list"><button class="filter">Дизайн</button></li>
         <li class="list"><button class="filter">Маркетинг</button></li>
       </ul>
-
+       
       <ul class="example">
         <li class="list"><img src="./images/technokryak.jpg" alt="Веб-сайт" width="370"> <h2 class="title">Технокряк</h2><p class="description">Веб-сайт</p></li>
         <li class="list"><img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370"> <h2 class="title">Постер New Orlean vs Golden Star</h2><p class="description">Дизайн</p></li>
@@ -55,11 +58,16 @@
         <li class="list"><img src="./images/lab.jpg" alt="Бирка" width="370"> <h2 class="title">Проект LAB</h2><p class="description">Маркетинг</p></li>
         <li class="list"><img src="./images/business.jpg" alt="Ноутбук с приложением" width="370"> <h2 class="title">Growing Business</h2><p class="description">Приложение</p></li>
       </ul>
+      </div>
       </section> 
     </main>
+
+  
     <footer class="footer">
+      <section class="bottom">
+      <div class="bottom container">
       <a href="./index.html" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
-      <address class="adress">
+      <address>
         <ul class="adress list">
           <li>
             <a href="https://goo.gl/maps/33gtuHecfimrdce18" target="blank" class="location"
@@ -70,6 +78,8 @@
           <li><a href="tel:+380991111111+" class="link">+38 099 111 11 11</a></li>
         </ul>
       </address>
+      </div>
+      </section>
     </footer>
   </body>
 </html>
