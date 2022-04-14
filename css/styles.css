@@ -36,36 +36,48 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  width: 1230px;
-  padding: 94px 15px;
+  width: 1200px;
+  padding: 0px 15px;
   margin: 0 auto;
 }
+
+.section {
+  padding: 94px 0;
+}
 .header .container {
-  padding: 32px 15px 32px 15px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header {
   background-color: var(--main-bg-color);
   border-bottom: 1px solid #ececec;
 }
-.site-nav {
-  display: flex;
-  align-items: center;
-}
+
 .navigation {
   display: flex;
   align-items: center;
 }
+.site-nav {
+  display: flex;
+}
+
 .site-nav .link {
+  padding: 32px 0;
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
-  margin-right: 50px;
 }
 .site-nav .link.current {
   color: var(--accent-color);
@@ -74,13 +86,23 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+
+.nav-item {
+  margin-right: 50px;
+}
+
+.nav-item:first-child {
+  margin-left: 90px;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  margin-right: 90px;
 }
 .web {
   color: var(--accent-color);
@@ -105,31 +127,38 @@ body {
 }
 .contacts {
   display: flex;
-  margin-left: auto;
 }
 
+.contact-item {
+  margin-right: 50px;
+}
+
+.contact-item:last-child {
+  margin-right: 0;
+}
 .link {
   cursor: pointer;
 }
+
 .contacts .link {
+  padding: 32px 0;
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
-  margin-left: 50px;
 }
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
 }
 .hero {
+  padding: 200px 0;
   background-color: var(--accent-bg-color);
 }
-.hero .container {
-  height: 400px;
-}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -192,7 +221,7 @@ body {
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
-.examples .container {
+.examples {
   padding-top: 0;
 }
 .examples-title,
@@ -227,11 +256,15 @@ body {
 .member-info:not(:last-child) {
   margin-right: 30px;
 }
+
+.member-box {
+  padding: 30px 0;
+}
+
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  padding-top: 30px;
 }
 .team-member-description {
   font-size: 16px;
@@ -239,14 +272,11 @@ body {
   color: var(--secondary-text-color);
   margin-top: 10px;
   text-align: center;
-  padding-bottom: 30px;
 }
-.bottom.container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 .footer {
   background-color: var(--accent-bg-color);
+  padding: 60px 0;
 }
 .footer .studio {
   color: var(--main-bg-color);
@@ -261,9 +291,21 @@ body {
 .location:hover {
   color: var(--accent-color);
 }
+
 .adress {
+  margin-top: 20px;
+}
+.adress-list {
   font-style: normal;
   margin-top: 20px;
+}
+
+.adress-item {
+  margin-bottom: 9px;
+}
+
+.adress-item:last-child {
+  margin-bottom: 0;
 }
 .adress .link {
   font-size: 14px;
@@ -282,14 +324,13 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
-  padding-top: 20px;
 }
 
 .portfolio-description {
   font-size: 16px;
   line-height: 1.89;
   color: var(--secondary-text-color);
-  padding-top: 4px;
+  margin-top: 4px;
 }
 .filter-buttons {
   justify-content: center;
@@ -303,7 +344,6 @@ body {
   background-color: var(--secondary-bg-color);
   color: var(--main-text-color);
   cursor: pointer;
-  margin-right: 8px;
   border-radius: 4px;
   padding: 6px 22px;
   border: none;
@@ -314,11 +354,15 @@ body {
   background-color: var(--accent-color);
 }
 
+.filter-item {
+  margin-right: 8px;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: 35px;
+  margin-top: 50px;
   margin-bottom: -30px;
 }
 .porfolio-item {
@@ -327,6 +371,9 @@ body {
   margin-bottom: 30px;
 }
 .card-info {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
