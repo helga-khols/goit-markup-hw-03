@@ -66,6 +66,7 @@ img {
   align-items: center;
 }
 .site-nav {
+  margin-left: 90px;
   display: flex;
 }
 
@@ -91,9 +92,6 @@ img {
   margin-right: 50px;
 }
 
-.nav-item:first-child {
-  margin-left: 90px;
-}
 .nav-item:last-child {
   margin-right: 0;
 }
@@ -356,6 +354,10 @@ img {
 
 .filter-item {
   margin-right: 8px;
+}
+
+.filter-item:last-child {
+  margin-right: 0;
 }
 
 .portfolio-list {
